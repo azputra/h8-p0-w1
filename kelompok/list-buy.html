@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" href="list-buy.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="home.html">
+                    <img class="hightlight" src="./images/droneLogo.png" alt="logo" width="10%" ; style="display: block;">
+                </a>
+                <div id="search">
+                    <form action="myproduct.html">
+                        <input class="search-area" type="text" name="text" placeholder="Search here">
+                        <input class="search-btn" type="submit" name="submit" value="SEARCH">
+                    </form>
+                </div>
+            </div>
+            <nav>
+                <div class="right" style="display: flex;">
+                    <div style="margin-right: 2vw;">
+                        <a href="list-buy.html">
+                            <img class="shopping" src="./images/shopping-cart.png" alt="transaction" width="20vw" style="display: block">
+                        </a>
+                    </div>
+                    <div style="margin-right: 2vw;">
+                        <a href="myproduct.html">Product</a>
+                    </div>
+                    <div style="margin-right: 2vw;">
+                        <a href="index.html">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="table-div">
+        <table>
+            <thead>
+                <tr>
+                    <th class="quantity">Qty.</th>
+                    <th class="item">Item</th>
+                    <th class="price">Price</th>
+                    <th class="address">Address</th>
+                    <th class="total">Total Price</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td>1</td>
+                    <td><img src="images/drone1.png">Red Dot Drone</td>
+                    <td>Rp. 3.000.000,-</td>
+                    <td><p class="alamat">Jl. H.Nawi II no.232,South Gandaria,Cilandak,South Jakarta City,Jakarta </p></td>
+                    <td>Rp. 3.000.000,-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="images/Xfold.jpeg" alt="Xfold"> Xfold</td>
+                    <td>Rp. 7.000.000,-</td>
+                    <td><p class="alamat">Jl. Ismail no. 120,RT.3 RW.10, South Kebayoran Lama,Kebayoran Lama,South Jakarta City,Jakarta</p></td>
+                    <td>Rp. 21.000.000,-</td>
+                </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total Payment</td>
+                    <td style="text-align: right">Rp. 24.000.000,-</td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="#pay">
+        <input type="submit" value="Buy" id="buy-buy">
+        </form>
+        </div>
+
+<!-- payment -->
+
+<div class="pay-ment" id="pay">
+    <div class="payment">
+<section>
+    <input type="radio" name="payment" id="cc" value="cc">
+    <label for="cc">Credit Card</label>
+</section>
+<section>
+<input type="text" name="credit" id="cc-num" maxlength="16" minlength="14" pattern="[0-9]">
+</section>
+<section>
+    <input type="radio" name="payment" id="COD" value="COD">
+    <label for="COD">Cash on Delivery</label>
+    <a class="bayar" href="#pop">Pay</a>
+</section>
+    </div>
+</div>
+
+<!-- pop-up -->
+
+<div class="pop-up" id="pop">
+    <div class="popup">
+    <img src="images/pop-up.jpg" alt="pop-up"/>
+    <a class="back" href="home.html">Back to Homepage</a>
+    </div>
+</div>
+
+<!-- close pop-up -->
+    </main>
+
+    <footer>
+    Hacktiv8 2019 Kelompok 2
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style-form.css" />
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div id="branding">
+              <a href="index.html">
+                  <img class="hightlight" src="./images/droneLogo.png" alt="logo" width="10%" ; style="display: block;">
+              </a>
+              <!-- <div id="search">
+                  <form action="signin.html">
+                      <input class="search-area" type="text" name="text" placeholder="Search here">
+                      <input class="search-btn" type="submit" name="submit" value="SEARCH"><a href="signup.html"></a></input>
+                  </form>
+              </div> -->
+          </div>
+          <nav>
+            <!-- <div style="display: flex;">
+              <div style="margin-right: 2vw;">
+                <a href="index.html">Home</a>
+            </div> -->
+            <div style="margin-right: 2vw;">
+                <a href="signin.html" style="color: white">Login</a>
+            </div>
+            </div>
+          </nav>
+
+      </div>
+  </header>
+    <main class="signMain signupMain">
+      <div id="sigDiv">
+        <div>
+          <h1>Sign Up :</h1>
+          <hr class="signHr">
+          <section class="email">
+            <label for="email">Your email :</label>
+            <input type="email" name="email" id="email" />
+          </section>
+          <section class="firstName">
+            <label for="fname">First Name :</label>
+            <input type="text" name="fname" id="fname" />
+          </section>
+          <br><br><br> <!--gua nambah batas-->
+          <section class="lastName">
+            <label for="lname">Last Name :</label>
+            <input type="text" name="lname" id="lname" />
+          </section>
+          <section class="userName">
+            <label for="uname">Username :</label>
+            <input type="text" name="uname" id="uname" />
+          </section>
+          <section class="password">
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password" />
+          </section>
+          <section class="password" style="padding-right: 59px"> <!-- gua nambahin inline style-->
+            <label for="password">Confirm Password :</label>
+            <input type="password" name="password" id="password" />
+          </section>
+          <hr class="signHr">
+          <h3 class="preference">Tell us more about yourself :</h3>
+          <section class="skillSelection">
+            <span>How Skillful are you:</span><br />
+            <hr class="spanHr">
+            <input type="radio" name="skill" id="novice" value="novice" />
+            <label for="novice">Novice</label>
+            <input
+              type="radio"
+              name="skill"
+              id="intermediate"
+              value="intermediate"
+            />
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="skill" id="advanced" value="advanced" />
+            <label for="advanced">Advanced</label>
+          </section>
+          <section class="brandSelection">
+            <label for="brand">Preference brand:</label><br />
+            <input list="brandList" id="brand" name="brand" />
+            <datalist id="brandList">
+              <option value="DJI"></option>
+              <option value="Parrot"></option>
+              <option value="Go Pro"></option>
+              <option value="Other"></option>
+            </datalist>
+          </section>
+          <hr class="tellUsHr">
+          <section class="submit">
+            <a href="./signin.html"><button class="sign-btn signup-btn">Sign Up</button></a>
+          </section>
+        </div>
+      </div>
+      <div class="videobg">
+        <video autoplay="autoplay" loop="loop" muted="muted">
+          <source src="./videos/DJI-IntroducingSpark.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </main>
+    <footer>
+      hacktiv8 2019
+    </footer>
+  </body>
+</html>
